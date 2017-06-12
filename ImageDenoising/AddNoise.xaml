@@ -1,0 +1,17 @@
+﻿<Window x:Class="ImageDenoising.AddNoise"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageDenoising"
+        mc:Ignorable="d"
+        Title="AddNoise" Height="300" Width="300" Loaded="AddNoise_OnLoaded">
+    <Grid>
+        <Label Name="LabelSaltRatio" Content="椒盐比率：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,60,0,0"></Label>
+        <TextBox Name="TextBoxSaltRatio" Text="0.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,64,0,0" Width="150"></TextBox>
+        <Label Name="LabelGaussionSigma" Content="sigma：" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="46,110,0,0"></Label>
+        <TextBox Name="TextBoxGaussionSigma" Text="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,114,0,0" Width="150"></TextBox>
+        <Button Name="ButtonConfirm" Content="确定" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="79,180,0,0" Width="60" Click="ButtonConfirm_OnClick"></Button>
+        <Button Name="ButtonCancel" Content="取消" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,180,0,0" Width="60" Click="ButtonCancel_OnClick"></Button>
+    </Grid>
+</Window>
